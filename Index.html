@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal CV</title>
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">  
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+<!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+-->
+    
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+    <script>
+        $(document).ready(function() {
+            $('#clickToScroll a, [href="#aboutMe"]').click(function (){
+                $('html, body').animate({
+                        scrollTop: parseInt($("#aboutMe").offset().top)
+                }, 2000);    
+               return false;
+            }); 
+            
+            $('[href="#contact"]').click(function (){
+                $('html, body').animate({
+                    scrollTop: parseInt($("#contact").offset().top)
+                }, 2000);    
+               return false;
+             });
+            
+            $(window).scroll(function(){ 
+        if ($(this).scrollTop() >= 200) { 
+            $('#return-to-top').fadeIn(400); 
+        } else { 
+            $('#return-to-top').fadeOut(400); 
+        } 
+    }); 
+    $('#return-to-top').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 700); 
+        return false; 
+    }); 
+            
+        });
+    </script>
+<body>
+    
+    <nav id="thenav" class="navbar navbar-inverse navbar-expand-lg navbar-light float-right">  
+<!--        <a class="navbar-brand" href="#">LOGO</a>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+<!--    SOCIAL BUTTONS-->
+
+<ul class="social">
+  <li>
+    <a class="fa fa-facebook" href="www.facebook.com" target="_blank">    
+      <span>Facebook</span>
+    </a> 
+  </li>
+  
+  <li>
+    <a class="fa fa-linkedin" href="www.linkedin.com/in/hristijan-ristovski" target="_blank">
+      <span>Linkedin</span>
+    </a>
+  </li>
+  
+  <li>
+    <a class="fa fa-git" href="#www.github.com" target="_blank">
+      <span>GitHub</span>
+    </a>
+  </li>
+  
+  <li>
+    <a class="fa fa-google-plus" href="#" target="_blank">
+    <span>Gmail</span>
+    </a> 
+  </li>  
+</ul>
+<!--    Social Buttons END-->
+    
+    <section id="header">
+        <div class="container text-center">
+            <div class="user-box">
+                <img class="img-responsive" src="images/personal.jpg">
+                <div class="user-text text-center">
+                    <h1>Hristijan Ristovski</h1>
+                    <p>- Software Engineer -</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="clickToScroll" class="scrollArrow hidden-xs hidden-md hidden-sm ">
+        <a href="#aboutMe">
+            <span></span>
+        </a>
+	</section>
+<!--     ABOUT ME---------------------------------------------------->
+    <section id="aboutMe">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                  <img class="img-responsive profile-img" src="images/personal.jpg"  />
+                </div>
+                
+                <div class="col-lg-6 col-md-12 col-sm-12 text-left">  
+                  <h3 class="title">WHO AM I?</h3>
+                    <p>
+                        My background as a Software Developer, along with my education in Computer Science, have allowed me to attain a good foundation of technical skills. In addition to my Web Development skills, I also possess a good eye for design. I am good at HTML, CSS, Less, Bootstrap, Javascript, Jquery, and the acompanying with each of these tecnologoies like C#, Node.js, Angular 2 and etc. Also i am Student of the Faculty of Computer Science and Engineering (FINKI) - "Ss. Cyril and Methodius University of Skopje". In addition to my knowledge base, I actively seek out new technologies and stay up-to-date on industry trends and advancements. Interested in innovations and new technologies. Also Interested in working in a team, as well as having individual responsibilities. Willing to help, listen and learn. Excellent communication skills in English and middle knowledge in German.
+                    </p>
+                    
+                    <div class="skills-bar">
+                    <p><b>HTML</b></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%">100</div>
+                        </div>
+                        <p><b>CSS</b></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%">80</div>
+                        </div>
+                        <p><b>Javascript</b></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%">70</div>
+                        </div>
+                        <p><b>Jquery</b></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%">80</div>
+                        </div>
+                        <p><b>Bootstrap</b></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%">100</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--    RESUME ------------------------------->
+    <section id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="title">MY EXPERIENCES</h3>
+                    <ul class="timeline">
+                        <li>
+                        <h4><span>2019</span> - Software Engineer</h4>
+                            <p>some random text textsome random text textsome random text textsome random text textsome random text text<br>
+                                <b>Company: </b>SEMOS<br>
+                                <b>Location: </b> Skopje, Macedonia <br>
+                                <b>Duration: </b> 12/2019 - Present
+                            </p>
+                        </li>
+                        <li>
+                        <h4><span>2019</span> - Software Engineer</h4>
+                            <p>some random text textsome random text textsome random text textsome random text textsome random text text<br>
+                                <b>Company: </b>SETEC<br>
+                                <b>Location: </b> Skopje, Macedonia <br>
+                                <b>Duration: </b> 10/2019 - 12/2019
+                            </p>
+                        </li>
+                        <li>
+                        <h4><span>2019</span> - Part Time,Frontend Developer</h4>
+                            <p>some random text textsome random text textsome random text textsome random text textsome random text text<br>
+                                <b>Company: </b>OneContact<br>
+                                <b>Location: </b> Remote <br>
+                                <b>Duration: </b> 01/2019 - 03/2019
+                            </p>
+                        </li>
+                        <li>
+                        <h4><span>2019</span> - Software Engineer</h4>
+                            <p>some random text textsome random text textsome random text textsome random text textsome random text text<br>
+                                <b>Company: </b>Interactive Solutions<br>
+                                <b>Location: </b> Ohrid, Macedonia<br>
+                                <b>Duration: </b> 07/2018 - 06/2019
+                            </p>
+                        </li>                        
+                        <li>
+                        <h4><span>2018</span> - Full Stack Developer</h4>
+                            <p>some random text textsome random text textsome random text textsome random text textsome random text text<br>
+                                <b>Company: </b>Sourcico<br>
+                                <b>Location: </b> Skopje, Macedonia<br>
+                                <b>Duration: </b> 10/2017 – 06/2018
+                            </p>
+                        </li>
+                        <li>
+                        <h4><span>2017</span> - Intern Front End Developer</h4>
+                            <p>some random text textsome random text textsome random text textsome random text textsome random text text<br>
+                                <b>Company: </b>ItCrowd<br>
+                                <b>Location: </b> Skopje, Macedonia<br>
+                                <b>Duration: </b> 03/2017 – 06/2017
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--    RESUME ------------------------------------------->
+    <section id="#resume"> 
+        <div class="resume text-center">
+            <div class="container">
+                <div class="row">
+<!--
+                    <button type="submit" onclick="window.location.href='/files/Hristijan_Ristovski_CV.pdf'">Download!</button>
+                    <a href="/files/Hristijan_Ristovski_CV.pdf" download="Hristijan Ristovski CV" target="_blank">RESUME</a>
+-->                 <div class="text-center">
+                        <p class="text-resume">
+                            Ohh.. if you want my personal CV to have into your database with my informations. Please click on the button bellow and download it!
+                        </p>
+                    
+                        <a class="btn btn-primary" id="resumeBtn" href="/files/Hristijan_Ristovski_CV.pdf" download="CV_File" download>
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
+                            &nbsp;My Resume
+                        </a>
+                    </div>            
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+    
+<!--    CONTACT ------------------------------------------->
+    <section id="contact">
+        <div class="contact">
+            <div class="container text-center">                
+            <h1>Contact Me</h1><br>
+                <p>My objective is simly to be the best web developer
+                   that i can be and to contribute to the dedicated to perfecting my craft by learning  from more seasoned developers, 
+                   remaining humble, and continuously making strides to learn all that i can about development.
+                </p>                
+            </div>
+        </div>
+<div class="form-bgGray">
+<div class="container">
+<div class="contact-form">
+    <div class="row">
+      <div class="col-md-6 col-xs-12 icons-left" id="keepInTouch">        
+        <div class="listing-content">
+            <h3>Let's Keep In Touch </h3>
+            <p>I'm always open to hear from you. For any questions, please fill out the contact form and I will call you back as soon as possible.</p>
+        </div>
+        <div class="team-content-points">
+            <ul>
+                <li>
+                    <span class="icons-wrap-lengthy"><img src="images/email-icon.png" alt=""></span>
+                    <p><a href="mailto:hristijan2509@gmail.com" class="links">hristijan2509@gmail.com</a></p>
+                </li>
+
+                <li>
+                    <span class="icons-wrap-lengthy"><img src="images/location-icon.svg" alt=""></span>
+                    <p><a href="https://www.google.com/maps/place/Skopje/@41.999069,21.3548503,12z/data=!3m1!4b1!4m5!3m4!1s0x135415a58c9aa2a5:0xb2ed88c260872020!8m2!3d41.9981294!4d21.4254355" class="links" target="_blank">Skopje, Macedonia</a></p>
+                </li>
+
+                <li>
+                    <span class="icons-wrap-lengthy"><img src="images/phone-icon.svg" alt=""></span>
+                    <p><a href="tel:+38975245880" class="links">+38975245880</a></p>
+                </li>
+
+            </ul>
+        </div>
+      </div>
+        
+      <div class="col-md-6 col-xs-12">
+         <form  id="form">
+            <div class="row">                
+                <div class="col-lg-6 col-xs-12">
+                      <div class="form-group">              
+                          <input type="text" class="form-control" minlength="2" maxlength="20" placeholder="First Name" oninvalid="setCustomValidity('Please update this field.')" onchange="try{setCustomValidity('')}catch(e){}" required>              
+                      </div>
+                  </div>
+              
+             <div class="col-lg-6 col-xs-12">
+              <div class="form-group">
+                  <input type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email Address" oninvalid="setCustomValidity('Please update this field.')" onchange="try{setCustomValidity('')}catch(e){}" required>          
+              </div>
+             </div>
+                 </div>
+             <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" minlength="2" placeholder="Subject" oninvalid="setCustomValidity('Please update this field.')" onchange="try{setCustomValidity('')}catch(e){}" required>              
+                    </div> 
+                </div>
+             </div>
+             
+             <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" minlength="2" placeholder="Message" oninvalid="setCustomValidity('Please update this field.')" onchange="try{setCustomValidity('')}catch(e){}" required style="padding: 20px 10px 80px; border-radius: 20px">              
+                    </div> 
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-dark" style="width: 100%; outline:none"><b>Submit</b></button>           
+                  </div>
+                 </div>
+             </div>
+             
+          </form>
+   
+  </div>
+        </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+<section>
+    <footer>            
+        <div class="container">
+            <p>                
+                <div class="text-center"> 
+                    Hristijan Ristovski &copy; 2019. All Right Reserved.
+                </div>    
+              
+            </p>
+        </div>
+    </footer>
+    
+    <a href="javascript:" id="return-to-top" style="display: none;"><i class="fa fa-arrow-up"></i></a>
+    
+</section>
+</body>
+</html>
